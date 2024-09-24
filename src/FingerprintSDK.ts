@@ -284,4 +284,4 @@ async function generateDeviceFingerprint(): Promise<Fingerprint> {
   return await initializeFingerprint();
 }
 
-export default generateDeviceFingerprint;
+export default generateDeviceFingerprint()
