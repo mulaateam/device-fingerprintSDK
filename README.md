@@ -10,7 +10,7 @@ A lightweight JavaScript SDK for generating device fingerprints using various br
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDK Test</title>
-    <script type="module" src="https://device-fingerprint-sdk.netlify.app/dist/fingerprintSDK.js" defer></script>
+   
 
 </head>
 <body>
