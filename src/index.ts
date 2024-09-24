@@ -6,4 +6,3 @@ generateDeviceFingerprint().then(fingerprint => {
   console.error('Error generating fingerprint:', error);
 });
 
-export default generateDeviceFingerprint;
