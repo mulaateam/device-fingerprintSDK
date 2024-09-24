@@ -28,3 +28,10 @@ A lightweight JavaScript SDK for generating device fingerprints using various br
 </html>
 ```
 
+
+## CDN    
+
+    ```
+    https://cdn.jsdelivr.net/npm/device-fingerprint-sdk@1.0.1/dist/index.js
+    ```
+
