@@ -1,4 +1,4 @@
-import generateDeviceFingerprint from './FingerprintSDK';
+import generateDeviceFingerprint from './fingerprintSDK';
 generateDeviceFingerprint().then(fingerprint => {
     console.log('Device Fingerprint:', fingerprint);
 }).catch(error => {
