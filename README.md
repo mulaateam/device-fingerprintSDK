@@ -16,7 +16,7 @@ A lightweight JavaScript SDK for generating device fingerprints using various br
 <body>
     <h1>Device Fingerprint Test</h1>
     <script type="module">
-        import generateDeviceFingerprint from './dist/FingerprintSDK.js';
+        import generateDeviceFingerprint from './dist/index.js';
         generateDeviceFingerprint().then(fingerprint => {
             console.log('Device Fingerprint:', fingerprint);
         }).catch(error => {
