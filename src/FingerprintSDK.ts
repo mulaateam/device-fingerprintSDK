@@ -224,12 +224,8 @@ async function generateDeviceFingerprint(): Promise<Fingerprint> {
       fingerprintComponents.ipAddress = initialIP || "unknown";
       fingerprintComponents.isVPN = isVPN;
       fingerprintComponents.isIncognito = await detectIncognitoMode();
-      fingerprintComponents.latency = await measureLatency(
-        endpoint || currentPageURL
-      );
       fingerprintComponents.isEmulator = await detectEmulator();
       fingerprintComponents.ipChanged = await hasIPChanged(initialIP);
-      fingerprintComponents.dnsLeak = await checkDNSLeak();
 
       // Add fingerprints from canvas, WebGL, and audio
       fingerprintComponents.canvasFingerprint = getCanvasFingerprint();
@@ -240,6 +236,11 @@ async function generateDeviceFingerprint(): Promise<Fingerprint> {
         JSON.stringify(fingerprintComponents)
       );
       fingerprintComponents.fingerprintHash = fingerprintHash;
+       fingerprintComponents.latency = await measureLatency(
+        endpoint || currentPageURL
+      );
+      
+      fingerprintComponents.dnsLeak = await checkDNSLeak();
 
       console.log(JSON.stringify(proxyData, null, 2));
 
