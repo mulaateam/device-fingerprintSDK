@@ -4,19 +4,19 @@ A lightweight JavaScript SDK for generating device fingerprints using various br
 
 ## Usage Example
 
-```<!DOCTYPE html>
+```
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDK Test</title>
-    <script type="module" src="./dist/index.js" defer></script>
+    <script type="module" src="https://device-fingerprint-sdk.netlify.app/dist/fingerprintSDK.js" defer></script>
 
 </head>
 <body>
     <h1>Device Fingerprint Test</h1>
     <script type="module">
-        import generateDeviceFingerprint from './dist/FingerprintSDK.js';
+        import generateDeviceFingerprint from 'https://device-fingerprint-sdk.netlify.app/dist/fingerprintSDK.js';
         generateDeviceFingerprint().then(fingerprint => {
             console.log('Device Fingerprint:', fingerprint);
         }).catch(error => {
@@ -30,6 +30,6 @@ A lightweight JavaScript SDK for generating device fingerprints using various br
 
 
 ## CDN    
+https://device-fingerprint-sdk.netlify.app/dist/fingerprintSDK.js
 
-    https://cdn.jsdelivr.net/npm/device-fingerprint-sdk@1.0.1/dist/index.js
 
